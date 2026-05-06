@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trợ lý Dược sĩ WebMD</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">
+        <div class="ai-avatar">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png"
+            alt="AI Doctor"
+            style="width: 50px; height: 50px"
+          />
+        </div>
+        <div class="ai-info">
+          <h2>Dược sĩ AI</h2>
+          <p id="ai-status">Sẵn sàng hỗ trợ bạn</p>
+        </div>
+      </div>
+
+      <div class="chat-box" id="chat-box">
+        <div class="message bot-message">
+          Xin chào! Tôi là trợ lý dược sĩ ảo. Bạn đang gặp phải triệu chứng gì
+          hôm nay?
+        </div>
+      </div>
+
+      <div class="input-area">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Ví dụ: Tôi bị đau đầu và chóng mặt..."
+          autocomplete="off"
+        />
+        <button id="send-btn">Gửi</button>
+      </div>
+    </div>
+
+    <script src="../static/js/chat.js"></script>
+  </body>
+</html>
